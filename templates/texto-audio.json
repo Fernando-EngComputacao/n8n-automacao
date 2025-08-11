@@ -1190,13 +1190,24 @@
           }
         ]
       ]
+    },
+    "Enviar audio": {
+      "main": [
+        [
+          {
+            "node": "Loop Message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
     }
   },
   "active": true,
   "settings": {
     "executionOrder": "v1"
   },
-  "versionId": "5dfc8adc-1718-416f-8b2d-f114296c72a8",
+  "versionId": "710a1938-52a6-41e8-a80c-f9f4b744c2d6",
   "meta": {
     "templateCredsSetupCompleted": true,
     "instanceId": "872d9749c6c91b20ebe583e857c63a1958f3d3fd66d76c43fa0da32b9913e3ba"
