@@ -592,37 +592,17 @@
         "promptType": "define",
         "text": "={{ $json.message }}\n\nData: {{ $now }}",
         "options": {
-          "systemMessage": "=# Identidade\n\nVocê é o assistente virtual da Zeelo Boots, a marca mais parruda de traia country que esse Brasil já viu.\n\nSeu nome é Zé Bento e você é um goiano \"do pé rachado\", criado na fazenda e que entende tudo de bota, chapéu e moda de cowboy raiz.\n\nSeu objetivo principal é ser o melhor parceiro do cliente, ajudando ele a encontrar o produto certo, seja pra lida no campo ou pro piseiro do fim de semana. A prosa tem que ser boa, direta e cheia de simpatia, que nem conversa na beira da porteira.\n\nVocê se comunica de um jeito autêntico, usando o sotaque e as gírias de Goiás, quebrando qualquer objeção com a simplicidade e a honestidade de um peão.\n\nVocê sempre deve se identificar e começar o comprimendo dizendo que é da loja Zeelo Boots.\n\n# Contexto\n\nNome da Loja: Zeelo Boots\n\nEstilo: Moda Country Raiz (Cowboys e Cowgirls)\n\nSotaque / Personalidade: Goiano autêntico, gente boa, prestativo e direto.\n\nData de hoje: ## {{Date}}\n\n## Etapa 1: Atendimento e Prosa Boa\n\nSaudação Goiana: Comece a conversa com uma saudação calorosa e regional.\n\nExemplos: \"Opa, mió di bão, cumpanheiro/cumpanheira?\", \"E aí, moço/moça, bão ou não? Bem-vindo(a) à Zeelo Boots!\", \"Chega pra cá! Em que posso te ajudar nesse mundão véi sem porteira?\"\n\nPerguntar o Interesse: De forma aberta, descubra o que o cliente tá caçando.\n\nExemplos: \"Me conta aí, qual é o ‘trem’ que ocê tá procurando hoje?\", \"Tá precisando de uma bota nova pra gastar a sola ou um chapéu ajeitado?\"\n\nEntender a Precisão: Faça perguntas pra saber exatamente a necessidade do cliente.\n\nSe for Bota: \"Essa bota é pra aguentar o batidão da lida ou é pra dançar um forró no piseiro?\"\n\nSe for Chapéu: \"É pra se proteger do sol quente ou pra dar aquele talento no visual?\"\n\nSe for Calça ou Camisa: \"É pra trabalho pesado ou pra ficar arrumado na festa de rodeio?\"\n\n## Etapa 2: Qualificação e Mostrar o Produto\n\nRecomendar com Sabedoria: Com base na resposta, direcione para a categoria certa, explicando o porquê.\n\nExemplo: \"Ah, se é pra lida, ocê precisa de uma bota de couro grosso e solado parrudo. As nossas com bico quadrado são as mais pedidas pela peonada. Posso te mostrar umas?\"\n\nApresentar as Opções: Mostre 2 ou 3 produtos, descrevendo com paixão e usando termos do universo country.\n\nExemplo: \"Óia só essa texana aqui... O couro dela é de primeira, aguenta qualquer repuxo. Já essa outra aqui, de cano mais curto, é jeitosa demais pra quem gosta de conforto.\"\n\nTirar Dúvida: Esteja pronto pra responder sobre material, conforto, durabilidade e qual combina mais.\n\nExemplo: \"Pode perguntar à vontade, sô! Tô aqui pra isso mesmo.\"\n\nChamar pro Arremate (Convite para Compra): Incentive o cliente a fechar o negócio.\n\nExemplos: \"Qual dessas duas fez seu coração bater mais forte?\", \"Bora levar essa joia pra casa? Posso te ajudar a botar ela no carrinho.\"\n\n# Regras de Atuação (O que pode e não pode)\n\nUse sempre o Sotaque: Em 100% do tempo, fale e escreva com o sotaque e as gírias de Goiás. NUNCA use linguagem formal.\n\nGírias liberadas: \"Uai\", \"trem\", \"bão\", \"demais da conta\", \"piseiro\", \"peão\", \"prenda\", \"cumpanheiro\", \"traia\", \"jeitoso\", \"parrudo\", \"arretado\", \"trem doido\", \"dar o prego\", \"de vereda\".\n\nSe perguntar o preço de cara: Não dê o valor logo de uma vez. Primeiro valorize o produto.\n\nExemplo: \"Cumpanheiro, preço aqui é igual gado, tem de todo tipo. Mas me fala o que ocê precisa, que eu te ajudo a achar um produto bão e que cabe no seu bolso. Qualidade aqui é garantida.\"\n\nSe pedir pra falar com uma pessoa: Encaminhe com a maior boa vontade do mundo.\n\nExemplo: \"Mas claro! Pra prosear com um dos nossos vendedores de carne e osso, é só chamar nesse Zap aqui: [Inserir Número do WhatsApp]. A turma lá é gente boa demais!\"\n\nSe fugir do assunto: Dê uma resposta curta e puxe a conversa de volta pra loja com jeitinho goiano.\n\nExemplo de pergunta do cliente: \"Você entende de carro?\"\n\nSua resposta: \"Uai, de carro eu entendo pouco, meu negócio mesmo é cavalo e bota boa. Falando em bota, ocê prefere ela com o cano mais alto ou mais baixo?\""
+          "systemMessage": "=# Identidade\n\nVocê é o assistente virtual da Zeelo Boots, a marca mais parruda de traia country que esse Brasil já viu.\n\nSeu nome é Zé Bento e você é um goiano \"do pé rachado\", criado na fazenda e que entende tudo de bota, chapéu e moda de cowboy raiz.\n\nSeu objetivo principal é ser o melhor parceiro do cliente, ajudando ele a encontrar o produto certo, seja pra lida no campo ou pro piseiro do fim de semana. A prosa tem que ser boa, direta e cheia de simpatia, que nem conversa na beira da porteira.\n\nVocê se comunica de um jeito autêntico, usando o sotaque e as gírias de Goiás, quebrando qualquer objeção com a simplicidade e a honestidade de um peão.\n\nVocê sempre deve se identificar e começar o comprimendo dizendo que é da loja Zeelo Boots.\n\nVocê é um assistente que gerencia meu banco de dados. Se pedir para ver a imagem, busque na base de dados a imagem referente ao produto. Quando for mostrar \n## tools\n- Read: utilize para recuperar os registros do banco de dados\n\n# Contexto\n\nNome da Loja: Zeelo Boots\n\nEstilo: Moda Country Raiz (Cowboys e Cowgirls)\n\nSotaque / Personalidade: Goiano autêntico, gente boa, prestativo e direto.\n\nData de hoje: ## {{Date}}\n\n## Etapa 1: Atendimento e Prosa Boa\n\nSaudação Goiana: Comece a conversa com uma saudação calorosa e regional.\n\nExemplos: \"Opa, mió di bão, cumpanheiro/cumpanheira?\", \"E aí, moço/moça, bão ou não? Bem-vindo(a) à Zeelo Boots!\", \"Chega pra cá! Em que posso te ajudar nesse mundão véi sem porteira?\"\n\nPerguntar o Interesse: De forma aberta, descubra o que o cliente tá caçando.\n\nExemplos: \"Me conta aí, qual é o ‘trem’ que ocê tá procurando hoje?\", \"Tá precisando de uma bota nova pra gastar a sola ou um chapéu ajeitado?\"\n\nEntender a Precisão: Faça perguntas pra saber exatamente a necessidade do cliente.\n\nSe for Bota: \"Essa bota é pra aguentar o batidão da lida ou é pra dançar um forró no piseiro?\"\n\nSe for Chapéu: \"É pra se proteger do sol quente ou pra dar aquele talento no visual?\"\n\nSe for Calça ou Camisa: \"É pra trabalho pesado ou pra ficar arrumado na festa de rodeio?\"\n\n## Etapa 2: Qualificação e Mostrar o Produto\n\nRecomendar com Sabedoria: Com base na resposta, direcione para a categoria certa, explicando o porquê.\n\nExemplo: \"Ah, se é pra lida, ocê precisa de uma bota de couro grosso e solado parrudo. As nossas com bico quadrado são as mais pedidas pela peonada. Posso te mostrar umas?\"\n\nApresentar as Opções: Mostre 2 ou 3 produtos, descrevendo com paixão e usando termos do universo country.\n\nExemplo: \"Óia só essa texana aqui... O couro dela é de primeira, aguenta qualquer repuxo. Já essa outra aqui, de cano mais curto, é jeitosa demais pra quem gosta de conforto.\"\n\nTirar Dúvida: Esteja pronto pra responder sobre material, conforto, durabilidade e qual combina mais.\n\nExemplo: \"Pode perguntar à vontade, sô! Tô aqui pra isso mesmo.\"\n\nChamar pro Arremate (Convite para Compra): Incentive o cliente a fechar o negócio.\n\nExemplos: \"Qual dessas duas fez seu coração bater mais forte?\", \"Bora levar essa joia pra casa? Posso te ajudar a botar ela no carrinho.\"\n\n# Regras de Atuação (O que pode e não pode)\n\nUse sempre o Sotaque: Em 100% do tempo, fale e escreva com o sotaque e as gírias de Goiás. NUNCA use linguagem formal.\n\nGírias liberadas: \"Uai\", \"trem\", \"bão\", \"demais da conta\", \"piseiro\", \"peão\", \"prenda\", \"cumpanheiro\", \"traia\", \"jeitoso\", \"parrudo\", \"arretado\", \"trem doido\", \"dar o prego\", \"de vereda\".\n\nSe perguntar o preço de cara: Não dê o valor logo de uma vez. Primeiro valorize o produto.\n\nExemplo: \"Cumpanheiro, preço aqui é igual gado, tem de todo tipo. Mas me fala o que ocê precisa, que eu te ajudo a achar um produto bão e que cabe no seu bolso. Qualidade aqui é garantida.\"\n\nSe pedir pra falar com uma pessoa: Encaminhe com a maior boa vontade do mundo.\n\nExemplo: \"Mas claro! Pra prosear com um dos nossos vendedores de carne e osso, é só chamar nesse Zap aqui: [Inserir Número do WhatsApp]. A turma lá é gente boa demais!\"\n\nSe fugir do assunto: Dê uma resposta curta e puxe a conversa de volta pra loja com jeitinho goiano.\n\nExemplo de pergunta do cliente: \"Você entende de carro?\"\n\nSua resposta: \"Uai, de carro eu entendo pouco, meu negócio mesmo é cavalo e bota boa. Falando em bota, ocê prefere ela com o cano mais alto ou mais baixo?\""
         }
       },
       "type": "@n8n/n8n-nodes-langchain.agent",
       "typeVersion": 2,
       "position": [
-        1960,
-        140
+        2100,
+        100
       ],
       "id": "aa780cc3-1b91-4376-8568-bc8ebc2bcde9",
       "name": "AI Agent"
-    },
-    {
-      "parameters": {
-        "modelName": "models/gemini-2.0-flash",
-        "options": {}
-      },
-      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
-      "typeVersion": 1,
-      "position": [
-        1880,
-        380
-      ],
-      "id": "32782ddf-a812-48e2-95b8-a82f1aac7dab",
-      "name": "Google Gemini Chat Model",
-      "credentials": {
-        "googlePalmApi": {
-          "id": "E0ZyD9xvs40sGawH",
-          "name": "Google Gemini(PaLM) Api account"
-        }
-      }
     },
     {
       "parameters": {
@@ -634,8 +614,8 @@
       "type": "@n8n/n8n-nodes-langchain.memoryRedisChat",
       "typeVersion": 1.5,
       "position": [
-        2060,
-        380
+        2080,
+        340
       ],
       "id": "720d574f-759c-452d-b534-dcaeec7e15e3",
       "name": "Redis Chat Memory",
@@ -650,34 +630,17 @@
       "parameters": {
         "content": "## Send Messages\nEnvia as mensagens de resposta ao cliente",
         "height": 740,
-        "width": 1820,
+        "width": 2980,
         "color": 4
       },
       "type": "n8n-nodes-base.stickyNote",
       "position": [
-        2260,
+        2400,
         -160
       ],
       "typeVersion": 1,
       "id": "ddd279bf-1e7a-41d6-956c-c710212ce756",
       "name": "Sticky Note6"
-    },
-    {
-      "parameters": {},
-      "type": "@n8n/n8n-nodes-langchain.embeddingsGoogleGemini",
-      "typeVersion": 1,
-      "position": [
-        3205.0600235495135,
-        -152.10462583133477
-      ],
-      "id": "c0ca9c0c-0ee4-4600-859c-7eb334767c32",
-      "name": "Embeddings Google Gemini",
-      "credentials": {
-        "googlePalmApi": {
-          "id": "E0ZyD9xvs40sGawH",
-          "name": "Google Gemini(PaLM) Api account"
-        }
-      }
     },
     {
       "parameters": {
@@ -686,8 +649,8 @@
       "type": "n8n-nodes-base.splitInBatches",
       "typeVersion": 3,
       "position": [
-        2540,
-        40
+        3100,
+        20
       ],
       "id": "6422b773-a7ff-430d-b5e3-e02780d05184",
       "name": "Loop Message"
@@ -699,24 +662,142 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        2320,
-        40
+        2460,
+        20
       ],
       "id": "6443ae3b-b971-41a6-8270-5f1b368b471d",
       "name": "Split Message"
     },
     {
       "parameters": {
-        "jsCode": "// Loop over input items and add a new field called 'myNewField' to the JSON of each one\nfor (const item of $input.all()) {\n  item.json.myNewField = 1;\n}\n\nreturn $input.all();"
+        "resource": "messages-api",
+        "instanceName": "={{ $('Edit Fields').item.json.instance }}",
+        "remoteJid": "={{ $('Edit Fields').item.json.telefone }}",
+        "messageText": "={{ $('Output Loop').item.json.output }}",
+        "options_message": {}
       },
-      "type": "n8n-nodes-base.code",
-      "typeVersion": 2,
+      "type": "n8n-nodes-evolution-api.evolutionApi",
+      "typeVersion": 1,
       "position": [
-        2880,
-        20
+        4380,
+        280
       ],
-      "id": "4ba22ea0-7164-456b-8b6d-66e8cf8df154",
-      "name": "Delay Message"
+      "id": "e737d154-ac95-446d-bb46-1ecdb590470a",
+      "name": "Enviar texto",
+      "credentials": {
+        "evolutionApi": {
+          "id": "Kt1m17q0er4ODPAe",
+          "name": "Evolution account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "audio",
+        "model": "tts-1-hd",
+        "input": "={{ $json.output }}",
+        "voice": "onyx",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.openAi",
+      "typeVersion": 1.8,
+      "position": [
+        4380,
+        60
+      ],
+      "id": "1837515d-63ed-41d9-8b30-81a72de7ecb2",
+      "name": "Generate audio",
+      "credentials": {
+        "openAiApi": {
+          "id": "WnFh02Nc55D7FaTe",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "binaryToPropery",
+        "destinationKey": "base64",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.extractFromFile",
+      "typeVersion": 1,
+      "position": [
+        4600,
+        60
+      ],
+      "id": "05fcb8fd-aadf-49c4-9838-e0db18f6ba96",
+      "name": "Extract from File"
+    },
+    {
+      "parameters": {
+        "resource": "messages-api",
+        "operation": "send-audio",
+        "instanceName": "={{ $('Edit Fields').item.json.instance }}",
+        "remoteJid": "={{ $('Edit Fields').item.json.telefone }}",
+        "media": "={{ $json.base64 }}",
+        "options_message": {}
+      },
+      "type": "n8n-nodes-evolution-api.evolutionApi",
+      "typeVersion": 1,
+      "position": [
+        4820,
+        60
+      ],
+      "id": "a27ccc09-d407-4762-b8ba-0dd9d008a0b1",
+      "name": "Enviar audio",
+      "credentials": {
+        "evolutionApi": {
+          "id": "Kt1m17q0er4ODPAe",
+          "name": "Evolution account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "getAll",
+        "tableId": "PR_PRODUTO",
+        "returnAll": true,
+        "matchType": "allFilters"
+      },
+      "type": "n8n-nodes-base.supabaseTool",
+      "typeVersion": 1,
+      "position": [
+        2220,
+        380
+      ],
+      "id": "ec7db707-ed48-4b7c-b349-b489c959665d",
+      "name": "Read",
+      "credentials": {
+        "supabaseApi": {
+          "id": "rtuNiu9jMuoCAxvg",
+          "name": "Supabase account 2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "mode": "list",
+          "value": "gpt-4.1-mini"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        1920,
+        340
+      ],
+      "id": "41528231-2639-4f19-8c45-b6575b5944ed",
+      "name": "OpenAI Chat Model",
+      "credentials": {
+        "openAiApi": {
+          "id": "WnFh02Nc55D7FaTe",
+          "name": "OpenAi account"
+        }
+      }
     },
     {
       "parameters": {
@@ -803,28 +884,132 @@
       "type": "n8n-nodes-base.switch",
       "typeVersion": 3.2,
       "position": [
-        3200,
-        20
+        3820,
+        -100
       ],
       "id": "e66715c2-74b9-46a5-a6e9-f765a6bb5702",
       "name": "Switch"
     },
     {
       "parameters": {
+        "operation": "select",
+        "table": {
+          "__rl": true,
+          "value": "PR_PRODUTO",
+          "mode": "list",
+          "cachedResultName": "PR_PRODUTO"
+        },
+        "returnAll": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Return_All', ``, 'boolean') }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.mySqlTool",
+      "typeVersion": 2.4,
+      "position": [
+        1920,
+        540
+      ],
+      "id": "7d7f3dd7-8836-40c0-af1a-1c6d39ae8a08",
+      "name": "Select rows from a table in MySQL",
+      "credentials": {
+        "mySql": {
+          "id": "zxgLEvmD6mFJGymf",
+          "name": "MySQL account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "578babde-a875-4cc8-a079-e8f93928eed5",
+              "leftValue": "={{ $json.output }}",
+              "rightValue": "https://zeeloboots.netlify.app/assets/",
+              "operator": {
+                "type": "string",
+                "operation": "contains"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        3460,
+        40
+      ],
+      "id": "73ca521e-ea17-4b47-9904-5cc295ede0e7",
+      "name": "Contains Image"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "3c93d82c-95b0-4f1d-955f-1770d0a3abbb",
+              "name": "urlmage",
+              "value": "={{ $json.output.match(/https?:\\/\\/[^\\)]+/)[0] }}",
+              "type": "string"
+            },
+            {
+              "id": "d4efdc38-0568-447a-9b72-2b7034cf1943",
+              "name": "output",
+              "value": "={{ $json.output }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        4380,
+        -120
+      ],
+      "id": "c8ea4d84-ac60-4ae7-81db-4922adedd8a5",
+      "name": "Catch Image"
+    },
+    {
+      "parameters": {
+        "url": "={{ $json.urlmage }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        4600,
+        -120
+      ],
+      "id": "9a6f695a-7e9c-4504-bf3c-939876cb272b",
+      "name": "HTTP Request"
+    },
+    {
+      "parameters": {
         "resource": "messages-api",
+        "operation": "send-image",
         "instanceName": "={{ $('Edit Fields').item.json.instance }}",
         "remoteJid": "={{ $('Edit Fields').item.json.telefone }}",
-        "messageText": "={{ $('Delay Message').item.json.output }}",
+        "media": "={{ $json.urlmage }}",
         "options_message": {}
       },
       "type": "n8n-nodes-evolution-api.evolutionApi",
       "typeVersion": 1,
       "position": [
-        3220,
-        240
+        4820,
+        -120
       ],
-      "id": "e737d154-ac95-446d-bb46-1ecdb590470a",
-      "name": "Enviar texto",
+      "id": "1d34ac5b-624c-4590-9c21-2a7b0a2e1b22",
+      "name": "Enviar imagem",
       "credentials": {
         "evolutionApi": {
           "id": "Kt1m17q0er4ODPAe",
@@ -834,64 +1019,143 @@
     },
     {
       "parameters": {
-        "resource": "audio",
-        "input": "={{ $json.output }}",
-        "voice": "shimmer",
+        "assignments": {
+          "assignments": [
+            {
+              "id": "ba2646b1-17ef-4f60-9616-96a76b6db91b",
+              "name": "output",
+              "value": "={{ $json.output }}",
+              "type": "string"
+            }
+          ]
+        },
         "options": {}
       },
-      "type": "@n8n/n8n-nodes-langchain.openAi",
-      "typeVersion": 1.8,
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
       "position": [
-        3500,
+        2760,
         20
       ],
-      "id": "1837515d-63ed-41d9-8b30-81a72de7ecb2",
-      "name": "Generate audio",
-      "credentials": {
-        "openAiApi": {
-          "id": "WnFh02Nc55D7FaTe",
-          "name": "OpenAi account"
-        }
-      }
+      "id": "a9162faa-9bde-4478-a70f-63fd36701b7c",
+      "name": "Output Loop"
     },
     {
       "parameters": {
-        "operation": "binaryToPropery",
-        "destinationKey": "base64",
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $('Edit Fields').item.json.messageType }}",
+                    "rightValue": "conversation",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    },
+                    "id": "2b77afd1-76c2-4747-ae5e-032d8dc708f9"
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Text"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "62e421e2-0c15-4ed5-a03b-c0d00782ceb9",
+                    "leftValue": "={{ $('Edit Fields').item.json.messageType }}",
+                    "rightValue": "audio",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Audio"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "ae37eb73-94fd-40a9-9c7e-9f8b5d85730e",
+                    "leftValue": "={{ $('Edit Fields').item.json.messageType }}",
+                    "rightValue": "image",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Image"
+            }
+          ]
+        },
         "options": {}
       },
-      "type": "n8n-nodes-base.extractFromFile",
-      "typeVersion": 1,
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.2,
       "position": [
-        3720,
-        20
+        3820,
+        100
       ],
-      "id": "05fcb8fd-aadf-49c4-9838-e0db18f6ba96",
-      "name": "Extract from File"
+      "id": "7885e71a-8355-43a7-b8a2-42428523612c",
+      "name": "Switch1"
     },
     {
       "parameters": {
-        "resource": "messages-api",
-        "operation": "send-audio",
-        "instanceName": "={{ $('Edit Fields').item.json.instance }}",
-        "remoteJid": "={{ $('Edit Fields').item.json.telefone }}",
-        "media": "={{ $json.base64 }}",
-        "options_message": {}
+        "jsCode": "const texto = $input.first().json.output;\n\n// RegEx mais flexível:\n// \\s* -> Procura por zero ou mais espaços ou quebras de linha.\n// -         -> Procura pelo hífen literal.\n// \\s* -> Novamente, procura por espaços ou quebras de linha.\n// Imagem:  -> Procura pelo texto literal \"Imagem:\".\n// [\\s\\S]* -> Procura por todos os caracteres que vêm depois, até o fim.\nconst regex = /\\s*-\\s*Imagem:[\\s\\S]*/;\n\n// O método .replace() remove o trecho encontrado pela RegEx.\nconst textoProcessado = texto.replace(regex, '');\n\n// Retorna o resultado.\nreturn {\n  output: textoProcessado\n};"
       },
-      "type": "n8n-nodes-evolution-api.evolutionApi",
-      "typeVersion": 1,
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
       "position": [
-        3940,
-        20
+        4160,
+        60
       ],
-      "id": "a27ccc09-d407-4762-b8ba-0dd9d008a0b1",
-      "name": "Enviar audio",
-      "credentials": {
-        "evolutionApi": {
-          "id": "Kt1m17q0er4ODPAe",
-          "name": "Evolution account"
-        }
-      }
+      "id": "aed9d64e-f665-454c-9ac0-63a39a8a44ce",
+      "name": "Remove Link Image"
+    },
+    {
+      "parameters": {
+        "jsCode": "const texto = $input.first().json.output;\n\n// RegEx mais flexível:\n// \\s* -> Procura por zero ou mais espaços ou quebras de linha.\n// -         -> Procura pelo hífen literal.\n// \\s* -> Novamente, procura por espaços ou quebras de linha.\n// Imagem:  -> Procura pelo texto literal \"Imagem:\".\n// [\\s\\S]* -> Procura por todos os caracteres que vêm depois, até o fim.\nconst regex = /\\s*-\\s*Imagem:[\\s\\S]*/;\n\n// O método .replace() remove o trecho encontrado pela RegEx.\nconst textoProcessado = texto.replace(regex, '');\n\n// Retorna o resultado.\nreturn {\n  output: textoProcessado\n};"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        4140,
+        280
+      ],
+      "id": "a621d00d-ddd4-4826-9cb9-e0c45f216cf7",
+      "name": "Remove Link Image1"
     }
   ],
   "pinData": {},
@@ -1066,17 +1330,6 @@
         ]
       ]
     },
-    "Google Gemini Chat Model": {
-      "ai_languageModel": [
-        [
-          {
-            "node": "AI Agent",
-            "type": "ai_languageModel",
-            "index": 0
-          }
-        ]
-      ]
-    },
     "Redis Chat Memory": {
       "ai_memory": [
         [
@@ -1104,7 +1357,7 @@
         [],
         [
           {
-            "node": "Delay Message",
+            "node": "Contains Image",
             "type": "main",
             "index": 0
           }
@@ -1115,43 +1368,7 @@
       "main": [
         [
           {
-            "node": "Loop Message",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Delay Message": {
-      "main": [
-        [
-          {
-            "node": "Switch",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Switch": {
-      "main": [
-        [
-          {
-            "node": "Enviar texto",
-            "type": "main",
-            "index": 0
-          }
-        ],
-        [
-          {
-            "node": "Generate audio",
-            "type": "main",
-            "index": 0
-          }
-        ],
-        [
-          {
-            "node": "Enviar texto",
+            "node": "Output Loop",
             "type": "main",
             "index": 0
           }
@@ -1201,13 +1418,183 @@
           }
         ]
       ]
+    },
+    "Read": {
+      "ai_tool": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Switch": {
+      "main": [
+        [
+          {
+            "node": "Catch Image",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Remove Link Image1",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Catch Image",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Remove Link Image",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Catch Image",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Remove Link Image1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Select rows from a table in MySQL": {
+      "ai_tool": [
+        []
+      ]
+    },
+    "Contains Image": {
+      "main": [
+        [
+          {
+            "node": "Switch",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Switch1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Catch Image": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request": {
+      "main": [
+        [
+          {
+            "node": "Enviar imagem",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Enviar imagem": {
+      "main": [
+        []
+      ]
+    },
+    "Output Loop": {
+      "main": [
+        [
+          {
+            "node": "Loop Message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Switch1": {
+      "main": [
+        [
+          {
+            "node": "Remove Link Image1",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Remove Link Image",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Remove Link Image1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Remove Link Image": {
+      "main": [
+        [
+          {
+            "node": "Generate audio",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Remove Link Image1": {
+      "main": [
+        [
+          {
+            "node": "Enviar texto",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
     }
   },
   "active": true,
   "settings": {
     "executionOrder": "v1"
   },
-  "versionId": "710a1938-52a6-41e8-a80c-f9f4b744c2d6",
+  "versionId": "f5524e8d-44e0-4b07-81fd-916cf6a50397",
   "meta": {
     "templateCredsSetupCompleted": true,
     "instanceId": "872d9749c6c91b20ebe583e857c63a1958f3d3fd66d76c43fa0da32b9913e3ba"
